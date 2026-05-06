@@ -1,0 +1,53 @@
+# Build directories
+build/
+build-*/
+Debug/
+Release/
+
+# Qt
+*.user
+*.user.*
+*.pro.user
+*.qmake.cache
+*.qmake.stash
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qm
+.qmake.stash
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cbp
+
+# Compiled
+*.o
+*.obj
+*.dll
+*.exe
+*.exp
+*.lib
+*.pdb
+*.ilk
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
