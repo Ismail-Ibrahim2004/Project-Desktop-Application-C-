@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c387971daea00f6e934e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Cafe-inventory",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Cafe-inventory::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cafe-inventory-Debug-621f78166d42ec74ba0e.json",
+					"name" : "Cafe-inventory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Cafe-inventory_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cafe-inventory_autogen-Debug-fc7a8ffed0a22f02ba59.json",
+					"name" : "Cafe-inventory_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Cafe-inventory_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cafe-inventory_autogen_timestamp_deps-Debug-42948a925f4d81c5f1b2.json",
+					"name" : "Cafe-inventory_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/esmea/Documents/Cafe-inventory/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/esmea/Documents/Cafe-inventory"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

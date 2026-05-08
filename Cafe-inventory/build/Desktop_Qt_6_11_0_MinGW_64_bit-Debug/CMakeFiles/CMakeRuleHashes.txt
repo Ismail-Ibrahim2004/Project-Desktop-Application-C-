@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+1689cc0f4afb40c3e4a306783e573404 CMakeFiles/Cafe-inventory_autogen
+713d49d6300e3ad2b0d8822b6fc26ce0 Cafe-inventory_autogen/timestamp
