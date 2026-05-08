@@ -1,0 +1,417 @@
+/* ============================================================
+   Café Employee Management — Qt Style Sheet
+   Palette: Dark Brown Sidebar | Cream/White Content | Orange Accent
+   ============================================================ */
+
+/* ── Global ─────────────────────────────────────────────── */
+QMainWindow, QWidget {
+    background-color: #FAF6F2;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    color: #2C1A0E;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+QWidget#sidebar {
+    background-color: #3B1F0C;
+    border: none;
+}
+
+QLabel#sidebarLogo {
+    color: #F5E6D3;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+    background-color: #2C1508;
+}
+
+QFrame#sidebarSep {
+    background-color: #5A3018;
+    border: none;
+}
+
+/* Nav buttons — default */
+QPushButton#navBtn {
+    background-color: transparent;
+    color: #C49A72;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 24px;
+    border: none;
+    border-radius: 0px;
+}
+QPushButton#navBtn:hover {
+    background-color: #4E2B12;
+    color: #F5E6D3;
+}
+
+/* Nav button — active/selected */
+QPushButton#navBtnActive {
+    background-color: #C95E00;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 24px;
+    border: none;
+    border-left: 4px solid #FF8C3A;
+}
+QPushButton#navBtnActive:hover {
+    background-color: #D96800;
+}
+
+/* Logout button */
+QPushButton#logoutBtn {
+    background-color: transparent;
+    color: #E07050;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 24px;
+    border: none;
+}
+QPushButton#logoutBtn:hover {
+    background-color: #4E2B12;
+    color: #FF8060;
+}
+
+/* ── Content Area ────────────────────────────────────────── */
+QWidget#content {
+    background-color: #FAF6F2;
+}
+
+/* Page title */
+QLabel#pageTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2C1A0E;
+}
+
+QLabel#pageSubtitle {
+    font-size: 13px;
+    color: #8A6650;
+}
+
+/* Add Employee button */
+QPushButton#addBtn {
+    background-color: #C95E00;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 0 22px;
+    min-width: 150px;
+}
+QPushButton#addBtn:hover {
+    background-color: #D96800;
+}
+QPushButton#addBtn:pressed {
+    background-color: #A84E00;
+}
+
+/* ── Search Bar ──────────────────────────────────────────── */
+QWidget#searchBar {
+    background-color: #FFFFFF;
+    border: 1.5px solid #E8DACA;
+    border-radius: 10px;
+}
+
+QLabel#searchIcon {
+    color: #8A6650;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QLineEdit#searchInput {
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    color: #2C1A0E;
+    padding: 0;
+}
+QLineEdit#searchInput::placeholder {
+    color: #B8997A;
+}
+
+/* ── Employee Table ──────────────────────────────────────── */
+QTableWidget#employeeTable {
+    background-color: #FFFFFF;
+    alternate-background-color: #FBF5EE;
+    border: 1.5px solid #E8DACA;
+    border-radius: 12px;
+    gridline-color: transparent;
+    outline: none;
+    selection-background-color: #FDEBD0;
+    selection-color: #2C1A0E;
+}
+
+QHeaderView::section {
+    background-color: #F5EDE2;
+    color: #6B4226;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 12px 14px;
+    border: none;
+    border-bottom: 2px solid #E0CDB8;
+}
+
+QTableWidget#employeeTable QTableWidgetItem {
+    padding: 0 14px;
+    color: #2C1A0E;
+}
+
+/* ── Role Badge ──────────────────────────────────────────── */
+QLabel#roleBadge {
+    background-color: #FFF0E0;
+    color: #A84E00;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 3px 10px;
+    border: 1px solid #F5C99A;
+    qproperty-alignment: AlignCenter;
+}
+
+/* ── Status Badges ───────────────────────────────────────── */
+QLabel#statusActive {
+    background-color: #D1F5E8;
+    color: #1A7A4A;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 3px 10px;
+    border: 1px solid #A3E6C8;
+    qproperty-alignment: AlignCenter;
+}
+
+QLabel#statusInactive {
+    background-color: #EDEDEE;
+    color: #6B6B78;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 3px 10px;
+    border: 1px solid #D5D5DA;
+    qproperty-alignment: AlignCenter;
+}
+
+/* ── Action Buttons ──────────────────────────────────────── */
+QPushButton#editBtn {
+    background-color: #EEF2FF;
+    color: #4F46E5;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid #C7D2FE;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+QPushButton#editBtn:hover {
+    background-color: #E0E7FF;
+}
+
+QPushButton#deleteBtn {
+    background-color: #FEF2F2;
+    color: #DC2626;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid #FECACA;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+QPushButton#deleteBtn:hover {
+    background-color: #FFE4E4;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+QScrollBar:vertical {
+    width: 8px;
+    background: transparent;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: #D6C0A8;
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical { height: 0; }
+
+/* ── Add/Edit Employee Dialog ────────────────────────────── */
+QDialog#employeeDialog {
+    background-color: #FAF6F2;
+    border-radius: 12px;
+}
+
+QLabel#dialogHeading {
+    font-size: 17px;
+    font-weight: 700;
+    color: #2C1A0E;
+    margin-bottom: 4px;
+}
+
+QLineEdit#formInput,
+QComboBox#formInput {
+    background-color: #FFFFFF;
+    border: 1.5px solid #E0CDB8;
+    border-radius: 7px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #2C1A0E;
+    min-height: 18px;
+}
+QLineEdit#formInput:focus,
+QComboBox#formInput:focus {
+    border-color: #C95E00;
+    outline: none;
+}
+QLineEdit#formInput[readOnly="true"] {
+    background-color: #F0E8DF;
+    color: #8A6650;
+}
+
+QComboBox#formInput::drop-down {
+    border: none;
+    width: 24px;
+}
+QComboBox#formInput QAbstractItemView {
+    background-color: #FFFFFF;
+    border: 1.5px solid #E0CDB8;
+    border-radius: 6px;
+    selection-background-color: #FDEBD0;
+    selection-color: #2C1A0E;
+}
+
+QDialogButtonBox#dialogButtons QPushButton {
+    min-width: 90px;
+    min-height: 36px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 18px;
+}
+QDialogButtonBox#dialogButtons QPushButton[text="Save"] {
+    background-color: #C95E00;
+    color: #FFFFFF;
+    border: none;
+}
+QDialogButtonBox#dialogButtons QPushButton[text="Save"]:hover {
+    background-color: #D96800;
+}
+QDialogButtonBox#dialogButtons QPushButton[text="Cancel"] {
+    background-color: #F0E8DF;
+    color: #6B4226;
+    border: 1.5px solid #D6C0A8;
+}
+QDialogButtonBox#dialogButtons QPushButton[text="Cancel"]:hover {
+    background-color: #E8DDD0;
+}
+
+/* QMessageBox */
+QMessageBox {
+    background-color: #FAF6F2;
+}
+QMessageBox QPushButton {
+    min-width: 80px;
+    min-height: 32px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #C95E00;
+    color: #FFFFFF;
+    border: none;
+    padding: 0 14px;
+}
+QMessageBox QPushButton:hover {
+    background-color: #D96800;
+}
+
+/* ── Dashboard — Stat Cards ──────────────────────────────── */
+QWidget#cardTotal,
+QWidget#cardActive,
+QWidget#cardInactive,
+QWidget#cardRoles {
+    border-radius: 12px;
+    border: 1.5px solid #E8DACA;
+}
+
+QWidget#cardTotal    { background-color: #FFF7F0; }
+QWidget#cardActive   { background-color: #F0FDF7; }
+QWidget#cardInactive { background-color: #F8F8F9; }
+QWidget#cardRoles    { background-color: #FFF0E0; }
+
+QLabel#cardValue {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2C1A0E;
+}
+
+QWidget#cardTotal    QLabel#cardValue { color: #C95E00; }
+QWidget#cardActive   QLabel#cardValue { color: #1A7A4A; }
+QWidget#cardInactive QLabel#cardValue { color: #6B6B78; }
+QWidget#cardRoles    QLabel#cardValue { color: #A84E00; }
+
+QLabel#cardLabel {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8A6650;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ── Dashboard — Panels ──────────────────────────────────── */
+QWidget#dashPanel {
+    background-color: #FFFFFF;
+    border: 1.5px solid #E8DACA;
+    border-radius: 12px;
+}
+
+QLabel#panelTitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2C1A0E;
+    margin-bottom: 4px;
+}
+
+/* ── Dashboard — Role Breakdown ──────────────────────────── */
+QLabel#roleRowLabel {
+    font-size: 13px;
+    color: #3D2010;
+    font-weight: 500;
+}
+
+QLabel#roleRowCount {
+    font-size: 13px;
+    font-weight: 700;
+    color: #C95E00;
+}
+
+QProgressBar#roleBar {
+    background-color: #F0E8DF;
+    border-radius: 4px;
+    border: none;
+}
+QProgressBar#roleBar::chunk {
+    background-color: #C95E00;
+    border-radius: 4px;
+}
+
+/* ── Dashboard — Roster Rows ─────────────────────────────── */
+QWidget#rosterRow {
+    background-color: transparent;
+    border-bottom: 1px solid #F0E8DF;
+    border-radius: 0px;
+}
+QWidget#rosterRow:last-child {
+    border-bottom: none;
+}
+
+QLabel#rosterName {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2C1A0E;
+}
