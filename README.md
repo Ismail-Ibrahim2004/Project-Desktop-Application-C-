@@ -58,11 +58,12 @@ The goal of this project is to organize cafe operations and provide a fast and e
 
 ## 🛠️ Technologies Used
 
-* **C++**
-* **Object-Oriented Programming (OOP)**
-* **File Handling**
-* Desktop Application Development
-
+- C++
+- Qt 6
+- Microsoft SQL Server
+- QODBC Driver
+- Object-Oriented Programming (OOP)
+- Git & GitHub
 ---
 
 ## 📊 Project Purpose
