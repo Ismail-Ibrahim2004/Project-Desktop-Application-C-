@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/settings.png</file>
+        <file>icons/logout.png</file>
+        <file>icons/coffee-cup (1).png</file>
+        <file>icons/product.png</file>
+        <file>icons/checkout.png</file>
+        <file>icons/employee.png</file>
+        <file>icons/bar-chart.png</file>
+        <file>icons/search-interface-symbol.png</file>
+        <file>icons/edit.png</file>
+        <file>icons/doller.png</file>
+        <file>icons/badge.png</file>
+        <file>icons/plus.png</file>
+        <file>icons/visible.png</file>
+        <file>icons/printer.png</file>
+        <file>icons/product-management.png</file>
+        <file>icons/warning.png</file>
+        <file>icons/trash.png</file>
+        <file>icons/dashboard.png</file>
+    </qresource>
+</RCC>
